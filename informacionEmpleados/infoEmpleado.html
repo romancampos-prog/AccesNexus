@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AccesNexus/Información de Empleados</title>
+  
+    <link rel="stylesheet" href="/informacionEmpleados/infoEmp.css">
+    <link rel="icon" href="/Imgs/icono/logo_AccesNexus.png">
+</head>
+<body>
+    <header class="header">
+        <video autoplay loop muted class="background-video">
+            <source src="/Imgs/icono/video1.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+        
+        <div class="user-info">
+            <img src="/Imgs/icono/user_icon.png" alt="User Icon">
+            <div class="user-name">
+                <span id="employee-name"></span>
+            </div>
+        </div>
+        
+        <div class="logo-container">
+            <img src="/Imgs/icono/logo_AccesNexus.png" alt="Access Nexus Logo" class="logo-img">
+        </div>
+    </header>
+
+    <div class="contenedor">
+        
+        <div class="contenedor_tabla">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No. de Control</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Hrs. Trabajadas</th>
+                        <th>Pago</th>
+                    </tr>
+                </thead>
+                <tbody id="empleados-tbody"></tbody>
+            </table>
+        </div>
+        <div class="contendor_derecho">
+            <div class="nomina">
+                <input type="number" placeholder="Numero de Control" class="numeroControl">
+                <button class="generarNomina">GENERAR NOMINA</button>
+            </div>
+            <div class="contendor_botones">
+                <button class="btn_antiguedad">ANTIGUEDAD</button>
+                <button class="btn_altas_bajas" >ALTAS Y BAJAS</button>
+                <button class="btn_estadisticas">ESTADISTICAS DE RENDIMIENTO</button>
+                <button class="btn_regresar">Regresar</button>
+
+            </div>
+        </div>
+       
+        
+    </div>
+   
+    <script type="module" src="/informacionEmpleados/infoEmpleados_firebase.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+
+</body>
+</html>

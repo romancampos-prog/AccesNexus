@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+body {
+    
+    background-color: #d9e8f4;
+}
+
+/* Estilos para la cabecera */
+.header {
+    position: relative;
+    overflow: hidden; /* Asegura que el video se ajuste al tamaño del header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cubre todo el header */
+    z-index: -1; /* Envía el video al fondo */
+    opacity: 0.8; /* Ajusta la opacidad si necesitas que el contenido destaque más */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté encima del video */
+}
+
+.user-info img {
+    width: 50px;
+    height: auto;
+}
+
+.user-name {
+    text-align: left;
+    color: white;
+}
+
+.user-name span {
+    display: block;
+    font-size: 0.9em;
+}
+
+/* Contenedor para el logo a la derecha */
+.logo-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* Fondo blanco para el logo */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #4a4a4a;
+}
+
+.logo-img {
+    width: 60px;
+    height: auto;
+}
+
+/* Estilos para el resto del contenido */
+.container_validar {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.ValidarEmpleado {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+}
+
+
+.valid {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    
+
+}
+
+.valid_img {
+    position: relative;
+    margin-right: 5px;
+    top: 3px;
+}
+
+button.valid:hover {
+    background-color: #1a8cff;
+    color: white;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.action-buttons .accion {
+    background-color: #00506b00;
+    color: black;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.action-buttons .accion:hover {
+    background-color: #003f54;
+    color: white;
+}
+
+button.btn_registrar {
+    background-color: #2db92d;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #1e7c1e;
+    width: 150px;
+}
+
+button.btn_registrar:hover {
+    background-color: #218838;
+}
+
+.Resultado, .rol, .dia_Y_hora {
+    background-color: #1a8cff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+/* Estilo adicional para Información de Empleados y Reiniciar Semana */
+button.infoEmp, button.reiniciar {
+    background-color: #555555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.infoEmp:hover, button.reiniciar:hover {
+    background-color: #333333;
+}
+
+.contendor_padre {
+    display: flex;
+}
+
+.contenedor1 {
+    background-color: white;
+    flex-basis: 20%; /* Ocupa el 20% del ancho total */
+    flex-grow: 0;    /* Evita que crezca más allá de su tamaño asignado */
+    flex-shrink: 0;  /* Evita que se encoja */
+    height: 100vh;
+    box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor2 {
+    background-color: #d9e8f4;
+    flex-basis: 80%; /* Ocupa el 80% del ancho total */
+    flex-grow: 0;    /* Evita que crezca más allá de su tamaño asignado */
+    flex-shrink: 0;  /* Evita que se encoja */
+     height: 100vh;
+}
+
+.passwordInput {
+    margin: auto;
+    width: 260px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.txt_password {
+    margin: 5px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.admin {
+    margin: auto;
+}
+
+.resultados {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    margin-top: 230px;
+}
+
+.Resultado1, .rol1, .dia_Y_hora1 {
+    height: 50px;
+    width: 800px;
+    background-color: #1a8cff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+
+.usuario_div, .rol_div, .dia_hora_div {
+    display: flex;
+    margin: auto;
+    gap: 20px;
+    align-items:center;
+}
+
+.img_usuario, .rol_img, .reloj_img {
+    width: 45px;
+}
+
+.confirmPassword {
+    background-color: #00000000;
+}
+
+.confirmPassword:hover {
+    color: white;
+    background-color:  #003f54;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}

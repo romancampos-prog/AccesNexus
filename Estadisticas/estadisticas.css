@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9e8f4;
+}
+
+/* Estilos para el encabezado */
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Video de fondo en el encabezado */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.user-info img {
+    width: 50px;
+    height: auto;
+}
+
+.user-name {
+    color: white;
+    font-weight: bold;
+}
+
+.user-name span {
+    display: block;
+    font-size: 1.1em;
+}
+
+/* Contenedor para el logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #4a4a4a;
+}
+
+.logo-img {
+    width: 60px;
+    height: auto;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor_tabla {
+    background-color: #d9e8f4;
+    flex-basis: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chart-container {
+    width: 90%; /* Ajusta el ancho al 90% de la pantalla */
+    height: 500px; /* Define una altura fija para el gráfico */
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #4a4a4a;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.contendor_derecho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    flex-basis: 20%;
+    height: 100vh;
+    box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.btn_regresar {
+    background-color: #2db92d;
+    padding: 15px;
+    color: white;
+    border: none;
+    width: 200px ;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.3);
+}

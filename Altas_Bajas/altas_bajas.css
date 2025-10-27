@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9e8f4;
+}
+
+/* Estilos para el encabezado */
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Video de fondo en el encabezado */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.user-info img {
+    width: 50px;
+    height: auto;
+}
+
+.user-name {
+    color: white;
+    font-weight: bold;
+}
+
+.user-name span {
+    display: block;
+    font-size: 1.1em;
+}
+
+/* Contenedor para el logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #4a4a4a;
+}
+
+.img_usuario {
+    width: 30px;
+    height: 30px;
+}
+
+.logo-img {
+    width: 60px;
+    height: auto;
+}
+
+/* Estilos de tabla y contenedor principal */
+.contenedor {
+    display: flex;
+    align-items: center;
+  
+}
+
+table {
+    width: 1100px;
+    border-collapse: collapse;
+    background: white;
+    margin: 0 auto;
+    color: black;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+th {
+    border-radius: 5px;
+    background-color: white;
+    color: blue;
+    padding: 10px;
+ 
+    text-align: center;
+    border-radius: 20px;
+ 
+}
+
+td {
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+    text-align: center;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+.contendor_derecho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    flex-basis: 20%; /* Ocupa el 20% del ancho total */
+    flex-grow: 0;    /* Evita que crezca más allá de su tamaño asignado */
+    flex-shrink: 0;  /* Evita que se encoja */
+    height: 100vh;
+    box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.nomina {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.contendor_botones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 200px;
+    margin-bottom: 30px;
+
+}
+
+
+.contenedor_tabla {
+    background-color: #d9e8f4;
+    flex-basis: 80%; /* Ocupa el 80% del ancho total */
+    flex-grow: 0;    /* Evita que crezca más allá de su tamaño asignado */
+    flex-shrink: 0;  /* Evita que se encoja */
+    height: 100vh;
+}
+
+.numeroControl {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.btn_alta, .btn_baja {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    display: flex;
+}
+
+.btn_alta:hover, .btn_baja:hover {
+    background-color: #1a8cff;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+.btn_estadisticas {
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    padding: 15px;
+    border: none;
+}
+
+button.btn_estadisticas:hover {
+    background-color: #1a8cff;
+    color: white;
+}
+
+.btn_regresar {
+    background-color: #2db92d;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #1e7c1e;
+    width: 150px;
+}
+
+.usuario_div {
+    display: flex;
+}
+
+
+.img_alta {
+    width: 25px;
+}
+
+.form_alta {
+    background-color: white;
+    width: 700px;
+    border-radius: 20px;
+    padding: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.3);
+    
+}
+
+.div_form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input_No_de_control, .input_RFC, .input_apellidos, 
+.input_nombres, .input_sueldo, .input_rol, 
+.no_baja_emplreado, .input_contraseña, .input_email {
+
+    border-radius: 10px;
+    width: 500px;
+    height: 35px;
+} 
+
+.div_baja {
+    background-color: white;
+    width: 700px;
+    border-radius: 20px;
+    padding: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    box-shadow: 10px 0px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.baja_noEmpleado {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

@@ -1,0 +1,6 @@
+No. de Empleado   | Apellido y Nombre                        | Sueldo       | Horas Trabajadas     | Pago de la Semana 
+--------------------------------------------------------------------------------------------------------------
+20240551          | Campos Barraza Roman Geovanni            | 75           | 0                    | 0                 
+20240552          | Sanchez Arenas Carlos Uriel              | 75           | 0                    | 0                 
+20240553          | Cuevas Carrillo Elsa                     | 95           | 0                    | 0                 
+20240555          | Mendoza Lizarraga Edwin Eduardo          | 75           | 0                    | 0                 
